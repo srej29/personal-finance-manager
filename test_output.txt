@@ -1,0 +1,1664 @@
+Initialized native services in: /Users/sreejachakraborty/.gradle/native
+Initialized jansi services in: /Users/sreejachakraborty/.gradle/native
+The client will now receive all logging from the daemon (pid: 10595). The daemon log file: /Users/sreejachakraborty/.gradle/daemon/8.14.2/daemon-10595.out.log
+Starting 207th build in daemon [uptime: 2 hrs 46 mins 54.816 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 26% of 384 MiB]
+Using 8 worker leases.
+Now considering [/Users/sreejachakraborty/Downloads/personal-finance-manager] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/sreejachakraborty/Downloads/personal-finance-manager/settings.gradle'.
+Projects loaded. Root project using build file '/Users/sreejachakraborty/Downloads/personal-finance-manager/build.gradle'.
+Included projects: [root project 'personal-finance-manager']
+
+> Configure project :
+Evaluating root project 'personal-finance-manager' using build file '/Users/sreejachakraborty/Downloads/personal-finance-manager/build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'org.springframework.boot', version: '3.2.5']
+Resolved plugin [id: 'io.spring.dependency-management', version: '1.1.7']
+Applying dependency management to configuration 'annotationProcessor' in project 'personal-finance-manager'
+Applying dependency management to configuration 'apiElements' in project 'personal-finance-manager'
+Applying dependency management to configuration 'archives' in project 'personal-finance-manager'
+Applying dependency management to configuration 'bootArchives' in project 'personal-finance-manager'
+Applying dependency management to configuration 'compileClasspath' in project 'personal-finance-manager'
+Applying dependency management to configuration 'compileOnly' in project 'personal-finance-manager'
+Applying dependency management to configuration 'default' in project 'personal-finance-manager'
+Applying dependency management to configuration 'developmentOnly' in project 'personal-finance-manager'
+Applying dependency management to configuration 'implementation' in project 'personal-finance-manager'
+Applying dependency management to configuration 'mainSourceElements' in project 'personal-finance-manager'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'personal-finance-manager'
+Applying dependency management to configuration 'runtimeClasspath' in project 'personal-finance-manager'
+Applying dependency management to configuration 'runtimeElements' in project 'personal-finance-manager'
+Applying dependency management to configuration 'runtimeOnly' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testCompileClasspath' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testCompileOnly' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testImplementation' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'personal-finance-manager'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'personal-finance-manager'
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/sreejachakraborty/.gradle/daemon/8.14.2 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Resolving global dependency management for project 'personal-finance-manager'
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[Execution worker,5,main]) started.
+:compileJava (Thread[Execution worker,5,main]) started.
+
+> Task :compileJava UP-TO-DATE
+Custom actions are attached to task ':compileJava'.
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+  Gradle does not know how file 'build/generated/sources/annotationProcessor/java/main/generated' was created (output property 'options.generatedSourceOutputDirectory'). Task output caching requires exclusive access to output paths to guarantee correctness (i.e. multiple tasks are not allowed to produce output in the same location).
+Skipping task ':compileJava' as it is up-to-date.
+Resolve mutations for :processResources (Thread[Execution worker,5,main]) started.
+:processResources (Thread[Execution worker,5,main]) started.
+
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[Execution worker,5,main]) started.
+:classes (Thread[Execution worker,5,main]) started.
+
+> Task :classes UP-TO-DATE
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[Execution worker,5,main]) started.
+:compileTestJava (Thread[Execution worker,5,main]) started.
+
+> Task :compileTestJava UP-TO-DATE
+Custom actions are attached to task ':compileTestJava'.
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+  Gradle does not know how file 'build/classes/java/test/generated_tests' was created (output property 'destinationDirectory'). Task output caching requires exclusive access to output paths to guarantee correctness (i.e. multiple tasks are not allowed to produce output in the same location).
+Skipping task ':compileTestJava' as it is up-to-date.
+Resolve mutations for :processTestResources (Thread[Execution worker,5,main]) started.
+:processTestResources (Thread[Execution worker,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :testClasses (Thread[Execution worker,5,main]) started.
+:testClasses (Thread[Execution worker,5,main]) started.
+
+> Task :testClasses UP-TO-DATE
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[Execution worker,5,main]) started.
+:test (Thread[Execution worker,5,main]) started.
+Gradle Test Executor 30 started executing tests.
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 30'. Working directory: /Users/sreejachakraborty/Downloads/personal-finance-manager Command: /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home/bin/java -Dorg.gradle.internal.worker.tmpdir=/Users/sreejachakraborty/Downloads/personal-finance-manager/build/tmp/test/work @/Users/sreejachakraborty/.gradle/.tmp/gradle-worker-classpath10739224659425893292txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 30'
+Successfully started process 'Gradle Test Executor 30'
+
+CategoryService Unit Tests > Should throw ResourceNotFoundException when deleting non-existent category FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should retrieve all categories for a user FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should create a custom category successfully FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should ensure default categories exist, doing nothing if all exist FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should ensure default categories exist, saving new ones if needed FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should delete an existing custom category successfully FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should throw IllegalStateException when deleting category with associated transactions FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should throw ResourceNotFoundException when user for category operation is not found FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should throw IllegalArgumentException when creating duplicate custom category FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should return empty Optional when accessible category not found by name FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should throw IllegalArgumentException when deleting a non-custom category FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+CategoryService Unit Tests > Should find accessible category by name FAILED
+    org.mockito.exceptions.misusing.InjectMocksException: 
+    Cannot instantiate @InjectMocks field named 'categoryService' of type 'class com.finance.category.CategoryService'.
+    You haven't provided the instance at field declaration so I tried to construct the instance.
+    However the constructor or the initialization block threw an exception : Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+        at app//org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base@17.0.15/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.15/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+        at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java.util.function.Consumer)" because "transactionRepositoryOptional" is null
+            at com.finance.category.CategoryService.<init>(CategoryService.java:29)
+            at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$8utLtw6b.invokeWithArguments(Unknown Source)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.lambda$newInstance$0(InstrumentationMemberAccessor.java:199)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:188)
+            at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.newInstance(InstrumentationMemberAccessor.java:161)
+            at org.mockito.internal.util.reflection.ModuleMemberAccessor.newInstance(ModuleMemberAccessor.java:42)
+            at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:291)
+            at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:146)
+            at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+            at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:48)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:91)
+            at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+            at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:88)
+            at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:26)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.injectCloseableMocks(InjectingAnnotationEngine.java:107)
+            at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:48)
+            at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
+            at org.mockito.internal.framework.DefaultMockitoSession.<init>(DefaultMockitoSession.java:43)
+            at org.mockito.internal.session.DefaultMockitoSessionBuilder.startMocking(DefaultMockitoSessionBuilder.java:83)
+            ... 69 more
+
+PersonalFinanceManagerApplicationTests STANDARD_OUT
+    08:01:52.720 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.finance.PersonalFinanceManagerApplicationTests]: PersonalFinanceManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    08:01:52.789 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.finance.PersonalFinanceManagerApplication for test class com.finance.PersonalFinanceManagerApplicationTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.5)
+
+    2025-06-14T08:01:53.037+05:30  INFO 13407 --- [    Test worker] f.PersonalFinanceManagerApplicationTests : Starting PersonalFinanceManagerApplicationTests using Java 17.0.15 with PID 13407 (started by sreejachakraborty in /Users/sreejachakraborty/Downloads/personal-finance-manager)
+    2025-06-14T08:01:53.038+05:30  INFO 13407 --- [    Test worker] f.PersonalFinanceManagerApplicationTests : No active profile set, falling back to 1 default profile: "default"
+    2025-06-14T08:01:53.480+05:30  INFO 13407 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-06-14T08:01:53.513+05:30  INFO 13407 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+    2025-06-14T08:01:53.870+05:30  INFO 13407 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-06-14T08:01:53.914+05:30  INFO 13407 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+    2025-06-14T08:01:53.936+05:30  INFO 13407 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-06-14T08:01:53.996+05:30  INFO 13407 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-06-14T08:01:54.013+05:30  INFO 13407 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2025-06-14T08:01:54.116+05:30  INFO 13407 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:finance_manager_db user=SA
+    2025-06-14T08:01:54.117+05:30  INFO 13407 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2025-06-14T08:01:54.133+05:30  WARN 13407 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+    2025-06-14T08:01:54.620+05:30  INFO 13407 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    Hibernate: create table categories (id bigint generated by default as identity, is_custom boolean not null, name varchar(255) not null, type varchar(255) not null check (type in ('INCOME','EXPENSE')), user_id bigint, primary key (id))
+    Hibernate: create table goals (id bigint generated by default as identity, current_progress numeric(15,2) not null, goal_name varchar(255) not null, start_date date not null, target_amount numeric(15,2) not null, target_date date not null, user_id bigint not null, primary key (id))
+    Hibernate: create table transactions (id bigint generated by default as identity, amount numeric(10,2) not null, date date not null, description varchar(500), category_id bigint not null, user_id bigint not null, primary key (id))
+    Hibernate: create table users (id bigint generated by default as identity, full_name varchar(255) not null, password varchar(255) not null, phone_number varchar(255) not null, username varchar(255) not null, primary key (id))
+    Hibernate: alter table if exists categories drop constraint if exists UKn22vnmml6mjq0j6i24cavceas
+    Hibernate: alter table if exists categories add constraint UKn22vnmml6mjq0j6i24cavceas unique (name, user_id)
+    Hibernate: alter table if exists users drop constraint if exists UK_r43af9ap4edm43mmtq01oddj6
+    Hibernate: alter table if exists users add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)
+    Hibernate: alter table if exists categories add constraint FKghuylkwuedgl2qahxjt8g41kb foreign key (user_id) references users
+    Hibernate: alter table if exists goals add constraint FKb1mp6ulyqkpcw6bc1a2mr7v1g foreign key (user_id) references users
+    Hibernate: alter table if exists transactions add constraint FKsqqi7sneo04kast0o138h19mv foreign key (category_id) references categories
+    Hibernate: alter table if exists transactions add constraint FKqwv7rmvc8va8rep7piikrojds foreign key (user_id) references users
+    2025-06-14T08:01:54.661+05:30  INFO 13407 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-06-14T08:01:54.900+05:30  INFO 13407 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    Hibernate: select c1_0.id,c1_0.is_custom,c1_0.name,c1_0.type,c1_0.user_id from categories c1_0 where c1_0.name=? and not(c1_0.is_custom)
+    Hibernate: insert into categories (is_custom,name,type,user_id,id) values (?,?,?,?,default)
+    2025-06-14T08:01:55.491+05:30  WARN 13407 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2025-06-14T08:01:55.658+05:30  INFO 13407 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2cf065e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d9fe131, org.springframework.security.web.context.SecurityContextHolderFilter@3495b709, org.springframework.security.web.header.HeaderWriterFilter@3b577709, org.springframework.web.filter.CorsFilter@585cbbde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fa46f2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9bec662, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c2b5f27, org.springframework.security.web.access.ExceptionTranslationFilter@6ceb953, org.springframework.security.web.access.intercept.AuthorizationFilter@7ba4591]
+    2025-06-14T08:01:55.789+05:30  INFO 13407 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:finance_manager_db'
+    2025-06-14T08:01:55.828+05:30  INFO 13407 --- [    Test worker] f.PersonalFinanceManagerApplicationTests : Started PersonalFinanceManagerApplicationTests in 2.925 seconds (process running for 4.426)
+
+AuthController Integration Tests STANDARD_OUT
+    2025-06-14T08:01:55.850+05:30  INFO 13407 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.finance.auth.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-06-14T08:01:55.864+05:30  INFO 13407 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.finance.PersonalFinanceManagerApplication for test class com.finance.auth.AuthControllerTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.5)
+
+    2025-06-14T08:01:55.877+05:30  INFO 13407 --- [    Test worker] com.finance.auth.AuthControllerTest      : Starting AuthControllerTest using Java 17.0.15 with PID 13407 (started by sreejachakraborty in /Users/sreejachakraborty/Downloads/personal-finance-manager)
+    2025-06-14T08:01:55.877+05:30  INFO 13407 --- [    Test worker] com.finance.auth.AuthControllerTest      : No active profile set, falling back to 1 default profile: "default"
+    2025-06-14T08:01:56.037+05:30  INFO 13407 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b60efd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ff35182, org.springframework.security.web.context.SecurityContextHolderFilter@31b9a628, org.springframework.security.web.header.HeaderWriterFilter@79f6e671, org.springframework.web.filter.CorsFilter@28ab0789, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@668c8c55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bf3fe88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@706b68e6, org.springframework.security.web.access.ExceptionTranslationFilter@66716c60, org.springframework.security.web.access.intercept.AuthorizationFilter@398c2298]
+    2025-06-14T08:01:56.064+05:30  INFO 13407 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-06-14T08:01:56.064+05:30  INFO 13407 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-06-14T08:01:56.065+05:30  INFO 13407 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2025-06-14T08:01:56.069+05:30  INFO 13407 --- [    Test worker] com.finance.auth.AuthControllerTest      : Started AuthControllerTest in 0.203 seconds (process running for 4.666)
+
+AuthController Integration Tests > Should return 400 Bad Request for invalid registration data STANDARD_OUT
+    2025-06-14T08:01:56.106+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+    2025-06-14T08:01:56.109+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/register
+           Parameters = {_csrf=[-t0YxcUpofohc6fzAMwaXfZJ3W_oryL2_BozGb9Q2cxTQFH3yOwgpvNMw58MQpSVY-EuOMcr8FbfzBfbmH9RLNkx7apkJjSW]}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"73"]
+                 Body = {"username":null,"password":"pass","fullName":"Name","phoneNumber":"123"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#registerUser(AuthRequest)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 400
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"password":"Password must be at least 8 characters long","phoneNumber":"Invalid phone number format","username":"Username cannot be empty"}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+AuthController Integration Tests > Should register a user and return 201 Created STANDARD_OUT
+    2025-06-14T08:01:56.206+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+    2025-06-14T08:01:56.206+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/register
+           Parameters = {_csrf=[156JKx_3vqhb9UkoKPsffO6C7Q77Jg7iuBvVNh-X0uLJydpF7qe6Ty-W2pt2xH0aHtYrHt3mwDfCHjzPgCjkBn6ktIb__ut0]}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"110"]
+                 Body = {"username":"newuser@example.com","password":"StrongPass1!","fullName":"New User","phoneNumber":"+1987654321"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#registerUser(AuthRequest)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 201
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"message":"User registered successfully","userId":1}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+AuthController Integration Tests > Should logout user and return 200 OK STANDARD_OUT
+    2025-06-14T08:01:56.230+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/logout
+    2025-06-14T08:01:56.231+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/logout
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/logout
+           Parameters = {_csrf=[EhB7Wn_jvMRo9U-2pKtBu9SamBGr__0jRa70BefZzOu3BSR9I3EaOEjVj_dFzHeFk4Z12u35tXDPm8UOIJnNMIHrqYiAM0JF]}
+              Headers = []
+                 Body = null
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#logoutUser(HttpServletRequest)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 200
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"message":"Logout successful","userId":null}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+AuthController Integration Tests > Should return 409 Conflict when registering with duplicate username STANDARD_OUT
+    2025-06-14T08:01:56.237+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+    2025-06-14T08:01:56.238+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/register
+           Parameters = {_csrf=[orgvgM8Fri7RPBTouXeH8IAc3nOidSB-DCjj6uZXvNcBNleFktwbsKsxlx_8BCHc3Vqzk7Ik8xGbQRJTOknb3odn2eJiBG7k]}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"110"]
+                 Body = {"username":"newuser@example.com","password":"StrongPass1!","fullName":"New User","phoneNumber":"+1987654321"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#registerUser(AuthRequest)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 409
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"message":"Username already taken.","userId":null}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+AuthController Integration Tests > Should log in user and return 200 OK STANDARD_OUT
+    2025-06-14T08:01:56.273+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+    2025-06-14T08:01:56.274+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/login
+           Parameters = {_csrf=[JiZViunb0WxG_gVyVo8CEYImHVuqxWAo2x95SNcgSjfUPwVoFxBg7I3q5Q9rxzMUZqI2JOcWMGOS9QUFuC5BfbIQeVXsCmdY]}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"61"]
+                 Body = {"username":"testuser@example.com","password":"testpassword"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#loginUser(LoginRequest, HttpServletRequest, HttpServletResponse)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 200
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"message":"Login successful","userId":null}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+AuthController Integration Tests > Should return 401 Unauthorized for invalid login credentials STANDARD_OUT
+    2025-06-14T08:01:56.282+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+    2025-06-14T08:01:56.282+05:30 DEBUG 13407 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/auth/login
+           Parameters = {_csrf=[IAbkJNlGTijnAQ5ZyLNjYSWG-sEH841D3vNm4mdVo5Go-LnCQTCGQu1xLEnKZWhv8J5XAx3j16M1wetuuMFfgVA2xvScmt37]}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"61"]
+                 Body = {"username":"testuser@example.com","password":"testpassword"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.finance.auth.AuthController
+               Method = com.finance.auth.AuthController#loginUser(LoginRequest, HttpServletRequest, HttpServletResponse)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = org.springframework.security.authentication.BadCredentialsException
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 401
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"message":"Invalid credentials","userId":null}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+Gradle Test Executor 30 finished executing tests.
+2025-06-14T08:01:56.377+05:30  INFO 13407 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-14T08:01:56.379+05:30  INFO 13407 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T08:01:56.380+05:30  INFO 13407 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+> Task :test FAILED
+
+25 tests completed, 12 failed
+Finished generating test XML results (0.004 secs) into: /Users/sreejachakraborty/Downloads/personal-finance-manager/build/test-results/test
+Generating HTML test report...
+Finished generating test html results (0.005 secs) into: /Users/sreejachakraborty/Downloads/personal-finance-manager/build/reports/tests/test
+
+[Incubating] Problems report is available at: file:///Users/sreejachakraborty/Downloads/personal-finance-manager/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/sreejachakraborty/Downloads/personal-finance-manager/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 6s
+4 actionable tasks: 1 executed, 3 up-to-date
+Watched directory hierarchies: [/Users/sreejachakraborty/Downloads/personal-finance-manager]

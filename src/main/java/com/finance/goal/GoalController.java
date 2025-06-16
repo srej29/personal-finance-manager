@@ -59,19 +59,26 @@ public class GoalController {
                     .divide(targetAmount, 4, RoundingMode.HALF_UP)
                     .multiply(new BigDecimal(100));
 
-            // CRITICAL FIX: Handle formatting correctly to avoid scientific notation
-            if (progressPercentage.compareTo(BigDecimal.ZERO) == 0) {
-                // For zero, use 0.0 format
-                progressPercentage = new BigDecimal("0.0");
-            } else {
-                // For non-zero values, use setScale to avoid scientific notation
+            // FINAL FIX: Set to 2 decimal places first
+            progressPercentage = progressPercentage.setScale(2, RoundingMode.HALF_UP);
+
+            // Only strip trailing zeros for whole numbers (like 65.00 -> 65.0)
+            // Keep meaningful decimals like 60.33 intact
+            if (progressPercentage.remainder(BigDecimal.ONE).compareTo(BigDecimal.ZERO) == 0) {
+                // It's a whole number like 65.00, make it 65.0
                 progressPercentage = progressPercentage.setScale(1, RoundingMode.HALF_UP);
+            }
+            // For values like 60.33, 60.67, etc. - keep 2 decimal places
+
+            // Special handling for zero to ensure 0.0 format
+            if (progressPercentage.compareTo(BigDecimal.ZERO) == 0) {
+                progressPercentage = new BigDecimal("0.0");
             }
         } else {
             progressPercentage = new BigDecimal("0.0");
         }
 
-        // Ensure it doesn't exceed 100
+        // Ensure percentage doesn't exceed 100
         progressPercentage = progressPercentage.min(new BigDecimal("100.0"));
 
         return new GoalResponse(

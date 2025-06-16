@@ -59,10 +59,20 @@ public class GoalController {
                     .divide(targetAmount, 4, RoundingMode.HALF_UP)
                     .multiply(new BigDecimal(100));
 
-            // CRITICAL FIX: Strip trailing zeros for test compatibility
-            progressPercentage = progressPercentage.stripTrailingZeros();
+            // CRITICAL FIX: Handle formatting correctly to avoid scientific notation
+            if (progressPercentage.compareTo(BigDecimal.ZERO) == 0) {
+                // For zero, use 0.0 format
+                progressPercentage = new BigDecimal("0.0");
+            } else {
+                // For non-zero values, use setScale to avoid scientific notation
+                progressPercentage = progressPercentage.setScale(1, RoundingMode.HALF_UP);
+            }
+        } else {
+            progressPercentage = new BigDecimal("0.0");
         }
-        progressPercentage = progressPercentage.min(new BigDecimal(100));
+
+        // Ensure it doesn't exceed 100
+        progressPercentage = progressPercentage.min(new BigDecimal("100.0"));
 
         return new GoalResponse(
                 goal.getId(),

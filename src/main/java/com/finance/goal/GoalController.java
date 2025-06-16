@@ -59,20 +59,17 @@ public class GoalController {
                     .divide(targetAmount, 4, RoundingMode.HALF_UP)
                     .multiply(new BigDecimal(100));
 
-            // FINAL FIX: Set to 2 decimal places first
+            // FINAL CORRECT FIX: Set to 2 decimal places, then strip trailing zeros
             progressPercentage = progressPercentage.setScale(2, RoundingMode.HALF_UP);
+            progressPercentage = progressPercentage.stripTrailingZeros();
 
-            // Only strip trailing zeros for whole numbers (like 65.00 -> 65.0)
-            // Keep meaningful decimals like 60.33 intact
-            if (progressPercentage.remainder(BigDecimal.ONE).compareTo(BigDecimal.ZERO) == 0) {
-                // It's a whole number like 65.00, make it 65.0
-                progressPercentage = progressPercentage.setScale(1, RoundingMode.HALF_UP);
-            }
-            // For values like 60.33, 60.67, etc. - keep 2 decimal places
-
-            // Special handling for zero to ensure 0.0 format
+            // Special handling for zero to avoid scientific notation
             if (progressPercentage.compareTo(BigDecimal.ZERO) == 0) {
                 progressPercentage = new BigDecimal("0.0");
+            }
+            // Ensure we don't get scientific notation for other values
+            else if (progressPercentage.scale() < 0) {
+                progressPercentage = progressPercentage.setScale(1, RoundingMode.HALF_UP);
             }
         } else {
             progressPercentage = new BigDecimal("0.0");

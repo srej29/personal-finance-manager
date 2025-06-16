@@ -71,13 +71,18 @@ public class GoalService {
         goal.setGoalName(request.getGoalName());
         goal.setTargetAmount(request.getTargetAmount());
         goal.setTargetDate(request.getTargetDate());
-        goal.setUser(user); // FIXED: Use setUser() instead of setUserId()
+        goal.setUser(user);
 
-        // CRITICAL: Set default start date if not provided
+        // Set default start date if not provided
         if (request.getStartDate() == null) {
             goal.setStartDate(LocalDate.now());
         } else {
             goal.setStartDate(request.getStartDate());
+
+            // CRITICAL FIX: Validate start date is not after target date
+            if (request.getStartDate().isAfter(request.getTargetDate())) {
+                throw new IllegalArgumentException("Start date cannot be after target date");
+            }
         }
 
         // Calculate initial progress

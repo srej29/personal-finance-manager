@@ -1,6 +1,8 @@
 package com.finance.category;
 
+
 import com.finance.exception.ResourceNotFoundException;
+import com.finance.transaction.TransactionRepository;  // ADD THIS IMPORT
 import com.finance.user.User;
 import com.finance.user.UserService;
 import jakarta.annotation.PostConstruct;
@@ -14,13 +16,16 @@ import java.util.Optional;
 public class CategoryService {
 
     private final CategoryRepository categoryRepository;
-    private final UserService userService; // To fetch user details for custom categories
+    private final UserService userService;
+    private final TransactionRepository transactionRepository;  // ADD THIS
 
-    // Constructor Injection
-    public CategoryService(CategoryRepository categoryRepository, UserService userService) {
+    // UPDATE CONSTRUCTOR to include TransactionRepository
+    public CategoryService(CategoryRepository categoryRepository, UserService userService, TransactionRepository transactionRepository) {
         this.categoryRepository = categoryRepository;
         this.userService = userService;
+        this.transactionRepository = transactionRepository;  // ADD THIS
     }
+
 
     /**
      * Initializes default categories upon application startup.
@@ -165,22 +170,22 @@ public class CategoryService {
     @Transactional
     public void deleteCustomCategory(String categoryName, Long userId) {
         User user = userService.findById(userId)
-                .orElseThrow(() -> new ResourceNotFoundException("User not found with ID: " + userId));
+                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
 
-        Optional<Category> categoryOptional = categoryRepository.findByNameAndUserAndIsCustomTrue(categoryName, user);
+        // FIXED: Use the correct repository method you already have
+        Category category = categoryRepository.findByNameAndUserAndIsCustomTrue(categoryName, user)
+                .orElseThrow(() -> new ResourceNotFoundException("Custom category '" + categoryName + "' not found for this user."));
 
-        if (categoryOptional.isEmpty()) {
-            throw new ResourceNotFoundException("Custom category '" + categoryName + "' not found for this user.");
+        // Check if category is in use - NOW THIS WILL WORK
+        boolean isInUse = transactionRepository.existsByCategoryAndUser(category, user);
+        if (isInUse) {
+            throw new IllegalArgumentException("Cannot delete category '" + categoryName + "' as it is currently in use by transactions.");
         }
 
-        Category category = categoryOptional.get();
-
-        if (!category.isCustom()) {
-            throw new IllegalArgumentException("Default categories cannot be deleted.");
-        }
-
+        // Delete the category
         categoryRepository.delete(category);
     }
+
 
     /**
      * Retrieves all default categories (isCustom = false).
@@ -188,5 +193,11 @@ public class CategoryService {
      */
     public List<Category> getDefaultCategories() {
         return categoryRepository.findByIsCustomFalse();
+    }
+
+    public void validateCategoryType(String type) {
+        if (!"INCOME".equals(type) && !"EXPENSE".equals(type)) {
+            throw new IllegalArgumentException("Category type must be INCOME or EXPENSE");
+        }
     }
 }

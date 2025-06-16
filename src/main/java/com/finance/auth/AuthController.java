@@ -21,6 +21,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.authentication.BadCredentialsException;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -69,28 +73,31 @@ public class AuthController {
      * @return ResponseEntity with login success message.
      */
     @PostMapping("/login")
-    public ResponseEntity<AuthResponse> loginUser(@Valid @RequestBody LoginRequest request,
-                                                  HttpServletRequest httpReq, HttpServletResponse httpRes) { // Changed HttpSession to HttpServletRequest/Response
+    public ResponseEntity<Map<String, Object>> login(@Valid @RequestBody LoginRequest request, HttpServletRequest httpRequest) {
+        try {
+            // Your authentication logic
+            Authentication authentication = authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
+            );
 
-        // Authenticate the user using Spring Security's AuthenticationManager
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
-        );
+            SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        // Explicitly set the authentication object in the SecurityContext
-        SecurityContext context = SecurityContextHolder.createEmptyContext(); // Create a new empty context
-        context.setAuthentication(authentication);
-        SecurityContextHolder.setContext(context); // Set the populated context
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", "Login successful");
+            response.put("userId", null);
+            return ResponseEntity.ok(response);
 
-        // Explicitly save the SecurityContext to the HttpSession
-        // This is crucial to ensure it persists across requests.
-        securityContextRepository.saveContext(context, httpReq, httpRes);
-
-        // You can also explicitly set attributes in the session if needed (though SecurityContextRepository handles principal)
-        // httpReq.getSession().setAttribute("username", authentication.getName());
-        httpReq.getSession().setMaxInactiveInterval(30 * 60); // Session timeout in seconds (e.g., 30 minutes)
-
-        return new ResponseEntity<>(new AuthResponse("Login successful", null), HttpStatus.OK);
+        } catch (BadCredentialsException e) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", "Invalid credentials");
+            response.put("userId", null);
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
+        } catch (Exception e) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", "Invalid credentials");  // Don't expose internal errors
+            response.put("userId", null);
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
+        }
     }
 
     /**

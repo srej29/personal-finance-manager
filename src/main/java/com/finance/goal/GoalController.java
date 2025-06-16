@@ -57,8 +57,10 @@ public class GoalController {
         if (targetAmount.compareTo(BigDecimal.ZERO) > 0) {
             progressPercentage = currentProgress
                     .divide(targetAmount, 4, RoundingMode.HALF_UP)
-                    .multiply(new BigDecimal(100))
-                    .setScale(2, RoundingMode.HALF_UP);
+                    .multiply(new BigDecimal(100));
+
+            // CRITICAL FIX: Strip trailing zeros for test compatibility
+            progressPercentage = progressPercentage.stripTrailingZeros();
         }
         progressPercentage = progressPercentage.min(new BigDecimal(100));
 

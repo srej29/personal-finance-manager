@@ -16,9 +16,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
-import org.springframework.security.web.context.HttpSessionSecurityContextRepository; // New import
-import org.springframework.security.web.context.SecurityContextRepository; // New import
-
+import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
+import org.springframework.security.web.context.SecurityContextRepository;
 
 @Configuration
 @EnableWebSecurity
@@ -27,38 +26,54 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable) // Disable CSRF for API endpoints
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize
-                        // Publicly accessible endpoints: register, login, logout, and the temporary debug endpoint
+                        // Public endpoints
                         .requestMatchers(HttpMethod.POST, "/api/auth/register", "/api/auth/login", "/api/auth/logout").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/debug/authstatus").permitAll() // TEMPORARY DEBUG ENDPOINT
+                        .requestMatchers("/api/debug/**").permitAll()
+                        .requestMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/error").permitAll()
                         // All other requests require authentication
                         .anyRequest().authenticated()
                 )
+                .headers(headers -> headers.frameOptions().disable())
                 .exceptionHandling(exception -> exception
-                        // Return 401 Unauthorized for unauthenticated requests to protected endpoints
                         .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
                 )
-                // Explicitly configure SecurityContextRepository to use HttpSession
-                .securityContext(securityContext -> securityContext
-                        .securityContextRepository(httpSessionSecurityContextRepository()) // Use our custom bean
+                .sessionManagement(session -> session
+                        .sessionCreationPolicy(org.springframework.security.config.http.SessionCreationPolicy.IF_REQUIRED)
+                        .maximumSessions(10) // Allow multiple sessions for testing
+                        .maxSessionsPreventsLogin(false)
                 )
-                .formLogin(AbstractHttpConfigurer::disable) // Disable default form login
-                .httpBasic(AbstractHttpConfigurer::disable) // Disable default HTTP Basic authentication
-                .logout(AbstractHttpConfigurer::disable); // Keep this disabled to use our custom logout controller
+                .securityContext(securityContext -> securityContext
+                        .securityContextRepository(httpSessionSecurityContextRepository())
+                        .requireExplicitSave(false) // Automatically save security context
+                )
+                .formLogin(AbstractHttpConfigurer::disable)
+                .httpBasic(AbstractHttpConfigurer::disable)
+                .logout(AbstractHttpConfigurer::disable);
 
         return http.build();
     }
 
     @Bean
     public UserDetailsService userDetailsService(UserService userService) {
-        return username -> userService.findByUsername(username)
-                .map(user -> org.springframework.security.core.userdetails.User.builder()
-                        .username(user.getUsername())
-                        .password(user.getPassword())
-                        .roles("USER")
-                        .build())
-                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
+        return username -> {
+            System.out.println("Loading user details for: " + username);
+            return userService.findByUsername(username)
+                    .map(user -> {
+                        System.out.println("Found user: " + user.getUsername() + " with ID: " + user.getId());
+                        return org.springframework.security.core.userdetails.User.builder()
+                                .username(user.getUsername())
+                                .password(user.getPassword())
+                                .roles("USER")
+                                .build();
+                    })
+                    .orElseThrow(() -> {
+                        System.out.println("User not found: " + username);
+                        return new UsernameNotFoundException("User not found: " + username);
+                    });
+        };
     }
 
     @Bean
@@ -71,12 +86,10 @@ public class WebSecurityConfig {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
-    /**
-     * Defines the SecurityContextRepository to explicitly use HttpSession for storing SecurityContext.
-     * @return An instance of HttpSessionSecurityContextRepository.
-     */
     @Bean
     public SecurityContextRepository httpSessionSecurityContextRepository() {
-        return new HttpSessionSecurityContextRepository();
+        HttpSessionSecurityContextRepository repository = new HttpSessionSecurityContextRepository();
+        repository.setAllowSessionCreation(true);
+        return repository;
     }
 }

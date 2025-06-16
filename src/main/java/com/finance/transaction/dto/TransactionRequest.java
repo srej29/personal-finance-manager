@@ -1,5 +1,6 @@
 package com.finance.transaction.dto;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -9,7 +10,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Data // Lombok annotation for getters, setters, toString, equals, hashCode
+@Data
 public class TransactionRequest {
 
     @NotNull(message = "Amount cannot be null")
@@ -17,11 +18,17 @@ public class TransactionRequest {
     private BigDecimal amount;
 
     @NotNull(message = "Date cannot be null")
-    @PastOrPresent(message = "Transaction date cannot be in the future") // Date validation as per assignment
+    @PastOrPresent(message = "Transaction date cannot be in the future")
     private LocalDate date;
 
     @NotBlank(message = "Category name cannot be empty")
     private String categoryName;
 
-    private String description; // Optional
+    private String description;
+
+    // CRITICAL FIX: Handle both "category" and "categoryName" from JSON
+    @JsonSetter("category")
+    public void setCategory(String category) {
+        this.categoryName = category;
+    }
 }

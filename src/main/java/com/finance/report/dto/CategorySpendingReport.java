@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Data // Lombok annotation for getters, setters, toString, equals, hashCode
-@NoArgsConstructor // Lombok annotation for no-arg constructor
-@AllArgsConstructor // Lombok annotation for all-arg constructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CategorySpendingReport {
-    private String categoryName;
+    private String categoryName;  // Changed from "name" to "categoryName"
     private CategoryType categoryType;
     private BigDecimal totalAmount;
 }

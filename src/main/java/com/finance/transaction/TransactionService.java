@@ -141,6 +141,9 @@ public class TransactionService {
             transaction.setDescription(description);
         }
 
+        // KEY FIX: Never update the date field - keep original date
+        // Even if date is passed in request, ignore it completely
+
         return transactionRepository.save(transaction);
     }
 
@@ -161,4 +164,6 @@ public class TransactionService {
 
         transactionRepository.delete(transaction);
     }
+
+
 }

@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Data // Lombok annotation for getters, setters, toString, equals, hashCode
-@NoArgsConstructor // Lombok annotation for no-arg constructor
-@AllArgsConstructor // Lombok annotation for all-arg constructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class GoalResponse {
     private Long id;
     private String goalName;

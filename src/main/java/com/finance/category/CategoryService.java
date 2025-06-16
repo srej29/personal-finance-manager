@@ -71,10 +71,14 @@ public class CategoryService {
      */
     @Transactional
     public Category createCustomCategory(String name, CategoryType type, Long userId) {
+        // Add validation for type
+        if (type == null) {
+            throw new IllegalArgumentException("Category type must be INCOME or EXPENSE");
+        }
+
         User user = userService.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found with ID: " + userId));
 
-        // Check if a custom category with this name already exists for this user
         if (categoryRepository.existsByNameAndUserAndIsCustomTrue(name, user)) {
             throw new IllegalArgumentException("Custom category with name '" + name + "' already exists for this user.");
         }
@@ -82,7 +86,6 @@ public class CategoryService {
         Category category = new Category(name, type, true, user);
         return categoryRepository.save(category);
     }
-
     /**
      * Retrieves all categories accessible to a given user (default and custom).
      * @param userId The ID of the user.

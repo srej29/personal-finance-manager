@@ -41,6 +41,20 @@ public class TransactionService {
      */
     @Transactional
     public Transaction createTransaction(BigDecimal amount, LocalDate date, String categoryName, String description, Long userId) {
+
+        if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Amount must be a positive decimal value.");
+        }
+        if (date == null) {
+            throw new IllegalArgumentException("Date cannot be null.");
+        }
+        if (date.isAfter(LocalDate.now())) {
+            throw new IllegalArgumentException("Transaction date cannot be in the future.");
+        }
+        if (categoryName == null || categoryName.trim().isEmpty()) {
+            throw new IllegalArgumentException("Category name cannot be empty.");
+        }
+
         if (amount.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Amount must be a positive decimal value.");
         }

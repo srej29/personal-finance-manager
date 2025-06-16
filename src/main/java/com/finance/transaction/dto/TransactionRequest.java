@@ -1,8 +1,6 @@
 package com.finance.transaction.dto;
 
 import com.fasterxml.jackson.annotation.JsonSetter;
-import jakarta.validation.constraints.DecimalMin;
-import jakarta.validation.constraints.PastOrPresent;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -10,18 +8,12 @@ import java.time.LocalDate;
 
 @Data
 public class TransactionRequest {
-
-    @DecimalMin(value = "0.01", message = "Amount must be a positive decimal value")
-    private BigDecimal amount;  // Remove @NotNull for updates
-
-    @PastOrPresent(message = "Transaction date cannot be in the future")
-    private LocalDate date;  // Remove @NotNull for updates
-
-    private String categoryName;  // Remove @NotBlank for updates
-
+    // REMOVE ALL @NotNull, @NotBlank, @DecimalMin annotations for partial updates to work
+    private BigDecimal amount;
+    private LocalDate date;
+    private String categoryName;
     private String description;
 
-    // Handle both "category" and "categoryName" from JSON
     @JsonSetter("category")
     public void setCategory(String category) {
         this.categoryName = category;

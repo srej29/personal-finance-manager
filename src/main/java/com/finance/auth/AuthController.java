@@ -75,30 +75,31 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<Map<String, Object>> login(@Valid @RequestBody LoginRequest request, HttpServletRequest httpRequest) {
         try {
-            // Your authentication logic
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
             );
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
+            // Save the security context to the session
+            HttpSession session = httpRequest.getSession(true);
+            session.setAttribute("SPRING_SECURITY_CONTEXT", SecurityContextHolder.getContext());
+
             Map<String, Object> response = new HashMap<>();
             response.put("message", "Login successful");
             response.put("userId", null);
             return ResponseEntity.ok(response);
 
-        } catch (BadCredentialsException e) {
+        } catch (Exception e) {  // Catch ALL exceptions and return 401
+            System.out.println("Login failed for user: " + request.getUsername() + ", Error: " + e.getMessage());
+
             Map<String, Object> response = new HashMap<>();
             response.put("message", "Invalid credentials");
             response.put("userId", null);
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
-        } catch (Exception e) {
-            Map<String, Object> response = new HashMap<>();
-            response.put("message", "Invalid credentials");  // Don't expose internal errors
-            response.put("userId", null);
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
     }
+
 
     /**
      * Handles user logout.

@@ -2,8 +2,10 @@ package com.finance.goal;
 
 import com.finance.exception.ResourceNotFoundException;
 import com.finance.transaction.TransactionRepository;
+import com.finance.transaction.Transaction;
 import com.finance.user.User;
 import com.finance.user.UserService;
+import com.finance.category.CategoryType;
 import com.finance.goal.dto.GoalRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,24 +35,33 @@ public class GoalService {
      * This method is crucial for the tests to pass.
      */
     private BigDecimal calculateGoalProgress(User user, LocalDate startDate) {
-        try {
-            System.out.println("=== CALCULATING GOAL PROGRESS ===");
-            System.out.println("User ID: " + user.getId());
-            System.out.println("Start Date: " + startDate);
+        System.out.println("=== CALCULATION DEBUG ===");
+        System.out.println("User: " + user.getId() + ", Start Date: " + startDate);
 
-            BigDecimal netSavings = transactionRepository.calculateNetSavingsByUserAndDateRange(
-                    user, startDate, LocalDate.now()
-            );
+        List<Transaction> allTransactions = transactionRepository.findByUserAndDateBetweenOrderByDateDesc(
+                user, startDate, LocalDate.now()
+        );
 
-            System.out.println("Calculated Net Savings: " + netSavings);
-            System.out.println("=================================");
+        System.out.println("Found " + allTransactions.size() + " transactions:");
+        BigDecimal totalIncome = BigDecimal.ZERO;
+        BigDecimal totalExpenses = BigDecimal.ZERO;
 
-            return netSavings != null ? netSavings : BigDecimal.ZERO;
-        } catch (Exception e) {
-            System.err.println("Error calculating goal progress: " + e.getMessage());
-            e.printStackTrace();
-            return BigDecimal.ZERO;
+        for (Transaction t : allTransactions) {
+            System.out.println("- " + t.getDate() + ": " + t.getCategory().getName() +
+                    " (" + t.getCategory().getType() + ") = " + t.getAmount());
+
+            if (t.getCategory().getType() == CategoryType.INCOME) {
+                totalIncome = totalIncome.add(t.getAmount());
+            } else {
+                totalExpenses = totalExpenses.add(t.getAmount());
+            }
         }
+
+        BigDecimal result = totalIncome.subtract(totalExpenses);
+        System.out.println("Income: " + totalIncome + ", Expenses: " + totalExpenses + ", Net: " + result);
+        System.out.println("========================");
+
+        return result;
     }
 
     private void updateGoalProgress(Goal goal) {
@@ -63,7 +74,17 @@ public class GoalService {
      */
     @Transactional
     public Goal createGoal(GoalRequest request, Long userId) {
-        // Get the User entity first
+        // Add validation
+        if (request.getGoalName() == null || request.getGoalName().trim().isEmpty()) {
+            throw new IllegalArgumentException("Goal name cannot be empty");
+        }
+        if (request.getTargetAmount() == null || request.getTargetAmount().compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Target amount must be a positive decimal value");
+        }
+        if (request.getTargetDate() == null || request.getTargetDate().isBefore(LocalDate.now())) {
+            throw new IllegalArgumentException("Target date must be in the future");
+        }
+
         User user = userService.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found with ID: " + userId));
 
@@ -73,21 +94,18 @@ public class GoalService {
         goal.setTargetDate(request.getTargetDate());
         goal.setUser(user);
 
-        // Set default start date if not provided
         if (request.getStartDate() == null) {
             goal.setStartDate(LocalDate.now());
         } else {
             goal.setStartDate(request.getStartDate());
 
-            // CRITICAL FIX: Validate start date is not after target date
+            // CRITICAL: Add validation for start date after target date
             if (request.getStartDate().isAfter(request.getTargetDate())) {
                 throw new IllegalArgumentException("Start date cannot be after target date");
             }
         }
 
-        // Calculate initial progress
         updateGoalProgress(goal);
-
         return goalRepository.save(goal);
     }
 
